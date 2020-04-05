@@ -46,7 +46,7 @@ namespace CommunityServiceManagement
                 //this.sqcon = new SqlConnection(WFAExer.Properties.Settings.Default.conStr);
                 //this.Sqlcon = new SqlConnection(@"Data Source=LAPTOP-HASIB\SQLEXPRESS;Initial Catalog=testDB;Integrated Security=True");
                 //this.Sqlcon = new SqlConnection(@"Data Source=DESKTOP-HASIB;Initial Catalog=mydb;Integrated Security=True");
-                this.Sqlcon = new SqlConnection(@"Data Source=DESKTOP-KBRDU32\SQLEXPRESS;Initial Catalog=CommunityServiceManagement;Integrated Security=True");
+                this.Sqlcon = new SqlConnection(@"Data Source=DESKTOP-EIS0VIO\SQLEXPRESS;Initial Catalog=communityservicemanagement;Integrated Security=True");
                 Sqlcon.Open();
             }
 
