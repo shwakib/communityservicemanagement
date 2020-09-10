@@ -79,7 +79,7 @@
             this.txtBoxPasswordLogin.MaxLength = 32767;
             this.txtBoxPasswordLogin.Name = "txtBoxPasswordLogin";
             this.txtBoxPasswordLogin.PasswordChar = '●';
-            this.txtBoxPasswordLogin.PromptText = "Password";
+            this.txtBoxPasswordLogin.WaterMark = "Password";
             this.txtBoxPasswordLogin.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtBoxPasswordLogin.SelectedText = "";
             this.txtBoxPasswordLogin.SelectionLength = 0;
@@ -112,7 +112,7 @@
             this.txtboxNidLogin.MaxLength = 32767;
             this.txtboxNidLogin.Name = "txtboxNidLogin";
             this.txtboxNidLogin.PasswordChar = '\0';
-            this.txtboxNidLogin.PromptText = "NID/Govt.ID";
+            this.txtboxNidLogin.WaterMark = "NID/Govt.ID";
             this.txtboxNidLogin.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtboxNidLogin.SelectedText = "";
             this.txtboxNidLogin.SelectionLength = 0;

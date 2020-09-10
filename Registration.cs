@@ -52,7 +52,7 @@ namespace CommunityServiceManagement
                         int count = this.Da.ExecuteUpdateQuery(sql);
 
 
-                        CitizenRegistration cr = new CitizenRegistration(this, h);
+                        CitizenRegistration cr = new CitizenRegistration(this, h,this.txtNIDRegistration.Text);
                         cr.Visible = true;
                         this.Visible = false;
                     }

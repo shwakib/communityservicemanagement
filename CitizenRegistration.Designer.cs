@@ -31,8 +31,6 @@
             this.pnlCitizenRegistration = new System.Windows.Forms.Panel();
             this.cmbBoxCitizenRegistration = new System.Windows.Forms.ComboBox();
             this.btnConfirmCitizenRegistration = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtboxNidCitizenRegistration = new System.Windows.Forms.TextBox();
             this.lblDOBCitizen = new System.Windows.Forms.Label();
             this.dtpCitizen = new System.Windows.Forms.DateTimePicker();
             this.btnBackCitizenRegistration = new System.Windows.Forms.Button();
@@ -55,8 +53,6 @@
             this.pnlCitizenRegistration.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlCitizenRegistration.Controls.Add(this.cmbBoxCitizenRegistration);
             this.pnlCitizenRegistration.Controls.Add(this.btnConfirmCitizenRegistration);
-            this.pnlCitizenRegistration.Controls.Add(this.label1);
-            this.pnlCitizenRegistration.Controls.Add(this.txtboxNidCitizenRegistration);
             this.pnlCitizenRegistration.Controls.Add(this.lblDOBCitizen);
             this.pnlCitizenRegistration.Controls.Add(this.dtpCitizen);
             this.pnlCitizenRegistration.Controls.Add(this.btnBackCitizenRegistration);
@@ -96,23 +92,6 @@
             this.btnConfirmCitizenRegistration.Text = "Confirm";
             this.btnConfirmCitizenRegistration.UseVisualStyleBackColor = true;
             this.btnConfirmCitizenRegistration.Click += new System.EventHandler(this.BtnConfirmCitizenRegistration_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 17);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "NID";
-            // 
-            // txtboxNidCitizenRegistration
-            // 
-            this.txtboxNidCitizenRegistration.Location = new System.Drawing.Point(148, 39);
-            this.txtboxNidCitizenRegistration.Multiline = true;
-            this.txtboxNidCitizenRegistration.Name = "txtboxNidCitizenRegistration";
-            this.txtboxNidCitizenRegistration.Size = new System.Drawing.Size(219, 37);
-            this.txtboxNidCitizenRegistration.TabIndex = 20;
             // 
             // lblDOBCitizen
             // 
@@ -267,8 +246,6 @@
         private System.Windows.Forms.TextBox txtboxEmailCitizen;
         private System.Windows.Forms.TextBox txtboxPhoneCitizen;
         private System.Windows.Forms.TextBox txtboxNameCitizen;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtboxNidCitizenRegistration;
         private System.Windows.Forms.Button btnConfirmCitizenRegistration;
         private System.Windows.Forms.ComboBox cmbBoxCitizenRegistration;
     }

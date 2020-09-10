@@ -82,7 +82,7 @@
             this.txtboxConfirmPasswordForgotPassword.MaxLength = 32767;
             this.txtboxConfirmPasswordForgotPassword.Name = "txtboxConfirmPasswordForgotPassword";
             this.txtboxConfirmPasswordForgotPassword.PasswordChar = '●';
-            this.txtboxConfirmPasswordForgotPassword.PromptText = "Confirm New Password";
+            this.txtboxConfirmPasswordForgotPassword.WaterMark = "Confirm New Password";
             this.txtboxConfirmPasswordForgotPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtboxConfirmPasswordForgotPassword.SelectedText = "";
             this.txtboxConfirmPasswordForgotPassword.SelectionLength = 0;
@@ -115,7 +115,7 @@
             this.txtboxPaswordForgotPassword.MaxLength = 32767;
             this.txtboxPaswordForgotPassword.Name = "txtboxPaswordForgotPassword";
             this.txtboxPaswordForgotPassword.PasswordChar = '●';
-            this.txtboxPaswordForgotPassword.PromptText = "New Password";
+            this.txtboxPaswordForgotPassword.WaterMark = "New Password";
             this.txtboxPaswordForgotPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtboxPaswordForgotPassword.SelectedText = "";
             this.txtboxPaswordForgotPassword.SelectionLength = 0;
@@ -148,7 +148,7 @@
             this.txtboxNidForgotPassword.MaxLength = 32767;
             this.txtboxNidForgotPassword.Name = "txtboxNidForgotPassword";
             this.txtboxNidForgotPassword.PasswordChar = '\0';
-            this.txtboxNidForgotPassword.PromptText = "NID";
+            this.txtboxNidForgotPassword.WaterMark = "NID";
             this.txtboxNidForgotPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtboxNidForgotPassword.SelectedText = "";
             this.txtboxNidForgotPassword.SelectionLength = 0;
@@ -211,7 +211,7 @@
             this.txtboxNameForgotPassword2.MaxLength = 32767;
             this.txtboxNameForgotPassword2.Name = "txtboxNameForgotPassword2";
             this.txtboxNameForgotPassword2.PasswordChar = '\0';
-            this.txtboxNameForgotPassword2.PromptText = "Name";
+            this.txtboxNameForgotPassword2.WaterMark = "Name";
             this.txtboxNameForgotPassword2.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtboxNameForgotPassword2.SelectedText = "";
             this.txtboxNameForgotPassword2.SelectionLength = 0;

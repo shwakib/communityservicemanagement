@@ -15,16 +15,18 @@ namespace CommunityServiceManagement
     public partial class CitizenRegistration : MetroForm
     {
         Registration r;
+        string nID;
 
         private DataAccess Da { get; set; }
 
         private DataSet Ds { get; set; }
         private Home h { set; get; }
-        public CitizenRegistration(Registration r,Home h)
+        public CitizenRegistration(Registration r,Home h,string id)
         {
             InitializeComponent();
             this.r = r;
             this.h = h;
+            this.nID = id;
             this.Da = new DataAccess();
         }
 
@@ -38,10 +40,10 @@ namespace CommunityServiceManagement
         private void BtnConfirmCitizenRegistration_Click(object sender, EventArgs e)
         {
             
-            string nid = this.txtboxNidCitizenRegistration.Text;string name = this.txtboxNameCitizen.Text;string phone = this.txtboxPhoneCitizen.Text;
+            /*string nid = this.txtboxNidCitizenRegistration.Text;*/string name = this.txtboxNameCitizen.Text;string phone = this.txtboxPhoneCitizen.Text;
             string dob = this.dtpCitizen.Text;string email = this.txtboxEmailCitizen.Text;string address = this.txtboxAddressCitizen.Text;
             string gender = this.cmbBoxCitizenRegistration.Text;string bloodgroup = this.txtboxBloodGroupCitizen.Text;
-            if(nid==""|| name == "" || phone == "" || dob == "" ||email == "" ||address == "" ||gender == "" ||bloodgroup == "")
+            if(/*nid==""|| */name == "" || phone == "" || dob == "" ||email == "" ||address == "" ||gender == "" ||bloodgroup == "")
             {
                 MessageBox.Show("You must Fill Up");
 
@@ -50,7 +52,7 @@ namespace CommunityServiceManagement
             {
                 try
                 {
-                    string sql = @"insert into citizenregistration values (" + this.txtboxNidCitizenRegistration.Text + ", '" + this.txtboxNameCitizen.Text + "', '" + this.txtboxPhoneCitizen.Text + "','" + this.dtpCitizen.Text + "','" + this.txtboxEmailCitizen.Text + "','" + this.txtboxAddressCitizen.Text + "','" + this.cmbBoxCitizenRegistration.Text + "','" + this.txtboxBloodGroupCitizen.Text + "');";
+                    string sql = @"insert into citizenregistration values (" + this.nID+ ", '" + this.txtboxNameCitizen.Text + "', '" + this.txtboxPhoneCitizen.Text + "','" + this.dtpCitizen.Text + "','" + this.txtboxEmailCitizen.Text + "','" + this.txtboxAddressCitizen.Text + "','" + this.cmbBoxCitizenRegistration.Text + "','" + this.txtboxBloodGroupCitizen.Text + "');";
                     int count = this.Da.ExecuteUpdateQuery(sql);
 
                     MessageBox.Show("Are you Sure?");
@@ -65,5 +67,7 @@ namespace CommunityServiceManagement
             }
             
         }
+
+        
     }
 }

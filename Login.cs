@@ -113,7 +113,8 @@ namespace CommunityServiceManagement
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Exception: " + ex);
+                MessageBox.Show("Password didnot match");
+                //MessageBox.Show("Exception: " + ex);
             }
         }
 
