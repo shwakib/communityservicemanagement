@@ -94,7 +94,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 459);
+            this.label2.Location = new System.Drawing.Point(40, 460);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 17);
             this.label2.TabIndex = 25;
@@ -108,9 +108,9 @@
             "Character Certificate",
             "Legacy Certificate",
             "Police Clearance"});
-            this.cmbboxTypeApplyForm.Location = new System.Drawing.Point(168, 453);
+            this.cmbboxTypeApplyForm.Location = new System.Drawing.Point(168, 460);
             this.cmbboxTypeApplyForm.Name = "cmbboxTypeApplyForm";
-            this.cmbboxTypeApplyForm.Size = new System.Drawing.Size(199, 24);
+            this.cmbboxTypeApplyForm.Size = new System.Drawing.Size(236, 24);
             this.cmbboxTypeApplyForm.TabIndex = 24;
             // 
             // label1

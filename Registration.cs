@@ -47,14 +47,25 @@ namespace CommunityServiceManagement
                 {
                     try
                     {
+                        string sql1 = "select * from login where nid=" + this.txtNIDRegistration.Text + ";";
+                        this.Ds= this.Da.ExecuteQuery(sql1);
+                        if(Ds.Tables.Count>0)
+                        {
+                            MessageBox.Show("NID already exists");
 
-                        string sql = @"insert into login values (" + this.txtNIDRegistration.Text + ", '" + this.txtPasswordRegistration.Text + "', 'citizen');";
-                        int count = this.Da.ExecuteUpdateQuery(sql);
+                        }
+                        else
+                        {
+                            string sql = @"insert into login values (" + this.txtNIDRegistration.Text + ", '" + this.txtPasswordRegistration.Text + "', 'citizen');";
+                            int count = this.Da.ExecuteUpdateQuery(sql);
 
 
-                        CitizenRegistration cr = new CitizenRegistration(this, h,this.txtNIDRegistration.Text);
-                        cr.Visible = true;
-                        this.Visible = false;
+                            CitizenRegistration cr = new CitizenRegistration(this, h, this.txtNIDRegistration.Text);
+                            cr.Visible = true;
+                            this.Visible = false;
+                        }
+
+
                     }
                     catch (Exception ex)
                     {
